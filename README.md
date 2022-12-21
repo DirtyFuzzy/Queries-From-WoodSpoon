@@ -2,7 +2,7 @@
 
 BI queries I made along my time in WoodSpoon:
 
-## Chef Shift Audits:
+## Chef Shift Audits
 
 At some point, we found that we lacking chef availability in certain days and certain hours.
 As a result, WoodSpoon stated to compensate chefs for availability in weekend and rush hours.
@@ -25,3 +25,10 @@ She wanted to know for every month:
 It was challenging to deal with bringing data from multiple dates (this / prev month) to the same row in a table.
 I used - interval '1 month' when left joining dates, of the same CTE.
 In retrospective, I could have used also 'lag' window function instead of joining the same table on table.date - 1 month.
+
+## Onboarding Chefs Grades
+In a meeting with my COO i was told that we don't have enough data on chefs that starting their way in WoodSpoon. She would like to keep track on new chefs KPIs in their first 6 months in WoodSpoon.
+Therefore I designed this table to show chefs grades (good/bad/absent) by their onboarding date.
+every column next to chef name showing its grade in the following month.
+In this case i used left join +1/2/3/4/5/6 month interval.
+In retrospective, I  think using a 'LEAD' window function will be more efficient than joining the same CTE with + month intervals.
