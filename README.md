@@ -14,8 +14,8 @@ This query saved WoodSpoon money, because we could measure the precise amount of
 I was asked by my COO to make a monthly KPI table, for WoodSpoon's home chefs.
 
 She wanted to know for every month:
-1. chef's avg rating.
-2. working hrs.
+- chef's avg rating.
+- working hrs.
 3. sales of chef in $.
 4. % of chef sales from the total sales.
 5. prev month working hrs.
