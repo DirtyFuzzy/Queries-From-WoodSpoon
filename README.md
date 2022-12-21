@@ -16,11 +16,11 @@ I was asked by my COO to make a monthly KPI table, for WoodSpoon's home chefs.
 She wanted to know for every month:
 - chef's avg rating.
 - working hrs.
-3. sales of chef in $.
-4. % of chef sales from the total sales.
-5. prev month working hrs.
-6. prev month % of chef sales  from prev month sales.
-7.prev month avg rating.
+- sales of chef in $.
+- % of chef sales from the total sales.
+- prev month working hrs.
+- prev month % of chef sales  from prev month sales.
+- prev month avg rating.
 
 It was challenging to deal with bringing data from multiple dates (this / prev month) to the same row in a table.
 I used - interval '1 month' when left joining dates, of the same CTE.
@@ -39,11 +39,11 @@ In one of my first months in WoodSpoon, we had a massive user growth due to new 
 
 My CTO asked me to build a simple, All Time 'Big Number' chart for every count:
 
-1. users that ordered 1st order with pc (promo code) and then gone.
-2. users that their 1st order is without  any pc.
-3. users that used pc in 1st order and then ordered without any pc.
-4. users that ordered 1st&2nd order with pc and then gone.
-5. users that ordered 1st&2nd order with pc and then placed 3rd order with real money.
+- users that ordered 1st order with pc (promo code) and then gone.
+- users that their 1st order is without  any pc.
+- users that used pc in 1st order and then ordered without any pc.
+- users that ordered 1st&2nd order with pc and then gone.
+- users that ordered 1st&2nd order with pc and then placed 3rd order with real money.
 
 It was my first query using window functions and multiple joins and CTEs. In this case ROW_NUMBER, for numbering user's orders by date in ascending numbers from 1-n.
 
