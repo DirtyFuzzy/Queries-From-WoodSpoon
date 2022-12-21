@@ -33,3 +33,18 @@ Therefore I designed this table to show chefs grades (good/bad/absent) by their 
 every column next to chef name showing its grade in the following month.
 In this case i used left join +1/2/3/4/5/6 month interval.
 In retrospective, I  think using a 'LEAD' window function will be more efficient than joining the same CTE with + month intervals.
+
+## Promo Code Orders
+In one of my first months in WoodSpoon, we had a massive user growth due to new 10$ promotional code that was given free to new users on their first couple of orders.
+
+My CTO asked me to build a simple, All Time 'Big Number' chart for every count:
+
+1. users that ordered 1st order with pc (promo code) and then gone.
+2. users that their 1st order is without  any pc.
+3. users that used pc in 1st order and then ordered without any pc.
+4. users that ordered 1st&2nd order with pc and then gone.
+5. users that ordered 1st&2nd order with pc and then placed 3rd order with real money.
+
+It was my first query using window functions and multiple joins and CTEs. In this case ROW_NUMBER, for numbering user's orders by date in ascending numbers from 1-n.
+
+In the end every column in this table was visualized as a 'Big Number' chart on WoodSpoons Apache SuperSet.
