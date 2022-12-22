@@ -1,6 +1,7 @@
 # Resume-Queries
 
-BI queries I made along my time in WoodSpoon:
+BI queries I made along my time in WoodSpoon.
+Sensitive data (ie chefs names, sales, etc) was blanked out. 
 
 ## Active Chefs Addresses
  Our chef operations manager asked the BE engineers if they can build her a tool that will show active chef addresses on a map.
