@@ -23,6 +23,10 @@ As a result, WoodSpoon stated to compensate chefs for availability in weekend an
 This query made to measure chef inactivity time during and before shift, to see if chef was available to an in advance orders and compensate chefs for their net availability duration and not gross.
 This query saved WoodSpoon money, because we could measure the precise amount of availability time instead of gross duration of shift time.
 
+#### The result on Superset:
+
+<img width="1387" alt="Screen Shot 2022-12-22 at 15 25 03" src="https://user-images.githubusercontent.com/105126311/209171045-c60817ad-98e3-4c5b-bf99-2657f818369e.png">
+
 ## Chef Sales And Percentage From Total Sales
 
 I was asked by my COO to make a monthly KPI table, for WoodSpoon's home chefs.
@@ -60,7 +64,7 @@ In retrospective, I  think using a 'LEAD' window function will be more efficient
 <img width="1382" alt="Screen Shot 2022-12-22 at 15 18 26" src="https://user-images.githubusercontent.com/105126311/209168359-80893105-abba-43a5-9c1d-f5a9f64cc3d8.png">
 
 ## Promo Code Orders
-In one of my first months in WoodSpoon, we had a massive user growth due to new 10$ promotional code that was given free to new users on their first couple of orders.
+In one of my first months in WoodSpoon, we had a massive user growth due to new promotional code that was given free to new users on their first couple of orders.
 
 My CTO asked me to build a simple, All Time 'Big Number' chart for every count:
 
