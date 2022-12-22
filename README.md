@@ -8,9 +8,9 @@ I was tagged in the thread by the BE tech lead, he asked if it could be done in 
 Gladly, I stood up the challenge and found out it will be pretty easy, deck.gl maps pack for Superset will do most of the job.
 This query saved lots of dev time and also time for the chef operations manager, that until then updated the addresses manually.
 To present the chef id and name in the tooltip, I used This JS code:
- <d => `
+ < d => `
 <div>id: <srtong>${d.object.extraProps.chef_id}</strong></div>
-<div>name: <srtong>${d.object.extraProps.chef_name}</strong></div>`>
+<div>name: <srtong>${d.object.extraProps.chef_name}</strong></div>` >
 
 ## Chef Shift Audits
 
