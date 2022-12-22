@@ -40,6 +40,13 @@ It was challenging to deal with bringing data from multiple dates (this / prev m
 I used - interval '1 month' when left joining dates, of the same CTE.
 In retrospective, I could have used also 'lag' window function instead of joining the same table on table.date - 1 month.
 
+#### The result on Superset:
+
+<img width="1386" alt="Screen Shot 2022-12-22 at 15 23 41" src="https://user-images.githubusercontent.com/105126311/209166613-c2d90b6f-811e-4155-baef-a16206c81f05.png">
+<img width="1383" alt="Screen Shot 2022-12-22 at 15 22 28" src="https://user-images.githubusercontent.com/105126311/209170076-ff0d5f5f-cd97-4d66-90eb-e044e093f261.png">
+<img width="1379" alt="Screen Shot 2022-12-22 at 15 23 07" src="https://user-images.githubusercontent.com/105126311/209170145-161efa57-29c5-4778-8d09-b894b20af767.png">
+
+
 ## Onboarding Chefs Grades
 In a meeting with my COO i was told that we don't have enough data on chefs that starting their way in WoodSpoon.
 She would like to keep track on new chefs KPIs in their first 6 months in WoodSpoon.
@@ -47,6 +54,10 @@ Therefore I designed this table to show chefs grades (good/bad/absent) by their 
 every column next to chef name showing its grade in the following month.
 In this case i used left join +1/2/3/4/5/6 month interval.
 In retrospective, I  think using a 'LEAD' window function will be more efficient than joining the same CTE with + month intervals.
+
+#### The result on Superset:
+
+<img width="1382" alt="Screen Shot 2022-12-22 at 15 18 26" src="https://user-images.githubusercontent.com/105126311/209168359-80893105-abba-43a5-9c1d-f5a9f64cc3d8.png">
 
 ## Promo Code Orders
 In one of my first months in WoodSpoon, we had a massive user growth due to new 10$ promotional code that was given free to new users on their first couple of orders.
@@ -62,3 +73,7 @@ My CTO asked me to build a simple, All Time 'Big Number' chart for every count:
 It was my first query using window functions and multiple joins and CTEs. In this case ROW_NUMBER, for numbering user's orders by date in ascending numbers from 1-n.
 
 In the end every column in this table was visualized as a 'Big Number' chart on WoodSpoons Apache SuperSet.
+
+#### The result on Superset:
+
+<img width="1166" alt="Screen Shot 2022-12-21 at 16 17 45" src="https://user-images.githubusercontent.com/105126311/209169497-d647ff8f-2819-41b1-bfd7-3b0321c629f1.png">
