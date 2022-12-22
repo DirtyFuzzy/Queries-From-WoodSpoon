@@ -3,7 +3,7 @@
 BI queries I made along my time in WoodSpoon:
 
 ## Active Chefs Addresses
- Our chef operations manager asked the BE engineers if they can build her a tool that can show active chef addresses on a map.
+ Our chef operations manager asked the BE engineers if they can build her a tool that will show active chef addresses on a map.
 I was tagged in the thread by the BE tech lead, he asked if it could be done in Superset, to save some develop time.
 Gladly, I stood up the challenge and found out it will be pretty easy, deck.gl maps pack for Superset will do most of the job.
 This query saved lots of dev time and also time for the chef operations manager, that until then updated the addresses manually.
@@ -11,6 +11,10 @@ To present the chef id and name in the tooltip, I used This JS code:
 <pre><code> d => `
  <div>id: <srtong>${d.object.extraProps.chef_id}</strong></div>
 <div>name: <srtong>${d.object.extraProps.chef_name}</strong></div>`</code></pre>
+
+#### The result on Superset:
+
+<img width="1439" alt="Screen Shot 2022-12-22 at 15 28 24" src="https://user-images.githubusercontent.com/105126311/209160974-7e9cc62d-726a-4cae-8d61-0b6d240700d1.png">
 
 ## Chef Shift Audits
 
