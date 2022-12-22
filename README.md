@@ -9,7 +9,7 @@ Gladly, I stood up the challenge and found out it will be pretty easy, deck.gl m
 This query saved lots of dev time and also time for the chef operations manager, that until then updated the addresses manually.
 To present the chef id and name in the tooltip, I used This JS code:
 <code> d => `
-<div>id: <srtong>${d.object.extraProps.chef_id}</strong></div>
+<code> <div>id: <srtong>${d.object.extraProps.chef_id}</strong></div>
 <div>name: <srtong>${d.object.extraProps.chef_name}</strong></div>` </code>
 
 ## Chef Shift Audits
