@@ -10,7 +10,7 @@ This query saved lots of dev time and also time for the chef operations manager,
 To present the chef id and name in the tooltip, I used This JS code:
 <pre><code> d => `
  <div>id: <srtong>${d.object.extraProps.chef_id}</strong></div>
-<div>name: <srtong>${d.object.extraProps.chef_name}</strong></div>`</code></per>
+<div>name: <srtong>${d.object.extraProps.chef_name}</strong></div>`</code></pre>
 
 ## Chef Shift Audits
 
