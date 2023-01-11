@@ -16,7 +16,7 @@ To present the chef id and name in the tooltip, I used This JS code:
 #### The result on Superset:
 
 <img width="1439" alt="Screen Shot 2022-12-22 at 15 28 24" src="https://user-images.githubusercontent.com/105126311/209160974-7e9cc62d-726a-4cae-8d61-0b6d240700d1.png">
-##
+
 ## Diners Rank By Month
 
 Showing monthly rank for every diner.
