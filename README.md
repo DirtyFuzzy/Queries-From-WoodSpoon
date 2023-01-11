@@ -16,6 +16,22 @@ To present the chef id and name in the tooltip, I used This JS code:
 #### The result on Superset:
 
 <img width="1439" alt="Screen Shot 2022-12-22 at 15 28 24" src="https://user-images.githubusercontent.com/105126311/209160974-7e9cc62d-726a-4cae-8d61-0b6d240700d1.png">
+##
+## Diners Rank By Month
+
+Showing monthly rank for every diner.
+New Diner - a diner that created a user in the past 3 months and placed an order.
+Regular Diner - a diner that already made its first order in previous months, and has 1-3 orders in current month.
+Super Diner - a diner that already made its first order in previous months, and has 4 orders or more in current month.
+Absent 1/2/3 months - a new user OR a diner that didn't order for 1/2/3 months.
+Churned Diner - a new user OR a diner that didn't order for 4 months or more.
+Revived Diner - a diner that ordered in current month and got back from being a churned diner.
+Ranks Cannot overlap in the same month, a new diner wont be also a regular / super diner.
+
+#### The Result:
+
+<img width="632" alt="Screen Shot 2023-01-11 at 16 54 12" src="https://user-images.githubusercontent.com/105126311/211839063-dffed1d6-aee7-4e06-9acb-b4397faf797d.png">
+
 
 ## Chef Shift Audits
 
